@@ -2,12 +2,12 @@
 import "./App.css";
 
 // Components
-import Nav from "./components/Nav";
+import Nav from "./components/NabB";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <NabB />
     </div>
   );
 }
