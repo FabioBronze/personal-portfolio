@@ -7,6 +7,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 // Images
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
 
 // React-Router-DOM
 import { HashLink } from "react-router-hash-link";
@@ -49,7 +50,7 @@ const Navb = () => {
               <Nav.Link
                 as={HashLink}
                 smooth
-                to="#home"
+                to="home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
@@ -60,18 +61,18 @@ const Navb = () => {
               <Nav.Link
                 as={HashLink}
                 smooth
-                to="#skills"
+                to="skills"
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
-                skills
+                Skills
               </Nav.Link>
               <Nav.Link
                 as={HashLink}
                 smooth
-                to="#projects"
+                to="projects"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"
@@ -79,7 +80,7 @@ const Navb = () => {
                 }
                 onClick={() => onUpdateActiveLink("projects")}
               >
-                projects
+                Projects
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
@@ -87,11 +88,11 @@ const Navb = () => {
                 <a href="https://www.linkedin.com/in/fabio-bronze/">
                   <img src={navIcon1} alt="Linkedin" />
                 </a>
-                <a href="https://www.linkedin.com/in/fabio-bronze/">
-                  <img src={navIcon2} alt="GitHub" />
+                <a href="https://github.com/FabioBronze">
+                  <img src={navIcon2} alt="Github" />
                 </a>
               </div>
-              <HashLink to="#connect">
+              <HashLink to="connect">
                 <button className="vvd">
                   <span>Download CV</span>
                 </button>
