@@ -251,11 +251,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner */
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url("./assets/img/banner-bg.png");
-  background-position: top center;
+  padding: 50px 0 100px 0;
+  /* background-image: url("./assets/img/banner-bg.jpg");
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .banner .tagline {
   font-weight: 700;
@@ -307,15 +307,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+.header-img {
+  width: 500px;
+
+}
 @keyframes updown {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
 }
 .txt-rotate > .wrap {

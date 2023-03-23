@@ -6,7 +6,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 
 // Image
-import Header from "../assets/img/header.jpg";
+import Header from "../assets/img/header.png";
 
 const Banner = () => {
   const [loopNumber, setLoopNumber] = useState(0);
@@ -68,7 +68,7 @@ const Banner = () => {
             </h1>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={Header} alt="Background" />
+            <img className="header-img" src={Header} alt="Background" />
           </Col>
         </Row>
       </Container>
