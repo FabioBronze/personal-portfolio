@@ -102,6 +102,10 @@ nav.navbar {
   z-index: 9999;
   transition: 0.32s ease-in-out;
 }
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -129,6 +133,7 @@ span.navbar-text {
   display: inline-block;
   margin-left: 14px;
 }
+
 .social-icon a {
   width: 42px;
   height: 42px;
