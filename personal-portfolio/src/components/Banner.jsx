@@ -59,18 +59,10 @@ const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome</span>
+            <span className="min">I'm Fábio Bronze and...</span> <br />
+            <span className="med">This is my portfolio!</span> <br />
             <h1>
-              <h1>
-                {`Hi! I'm Fábio`}{" "}
-                <span
-                  className="txt-rotate"
-                  dataPeriod="1000"
-                  data-rotate='[ "Front-End Developer", "Web Designer"]'
-                >
-                  <span className="wrap">{text}</span>
-                </span>
-              </h1>
+              <h1>Front-End Developer</h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sed
                 voluptatum rerum porro dolorem eum aspernatur maxime officia,
