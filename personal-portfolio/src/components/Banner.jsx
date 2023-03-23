@@ -9,24 +9,26 @@ import { useState, useEffect } from "react";
 import Header from "../assets/img/header.png";
 
 const Banner = () => {
-  const [loopNumber, setLoopNumber] = useState(0);
+  const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Fábio Bronze", "Front-End Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = ["Front-End Developer", "Web Designer"];
   const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
+
     return () => {
       clearInterval(ticker);
     };
   }, [text]);
 
   const tick = () => {
-    let i = loopNumber % toRotate.length;
+    let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
@@ -40,11 +42,15 @@ const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
-      setLoopNumber(loopNumber + 1);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
       setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
     }
   };
 
@@ -53,9 +59,18 @@ const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Hi! I'm</span>
+            <span className="tagline">Welcome</span>
             <h1>
-              <span classNamewrap>{text}</span>
+              <h1>
+                {`Hi! I'm Fábio`}{" "}
+                <span
+                  className="txt-rotate"
+                  dataPeriod="1000"
+                  data-rotate='[ "Front-End Developer", "Web Designer"]'
+                >
+                  <span className="wrap">{text}</span>
+                </span>
+              </h1>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sed
                 voluptatum rerum porro dolorem eum aspernatur maxime officia,
