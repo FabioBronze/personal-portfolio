@@ -5,7 +5,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+// Images
+import React from "../assets/img/react.webp";
+import JavaScript from "../assets/img/js.png";
+import HTML from "../assets/img/html.png";
+import CSS from "../assets/img/css.png";
+import ColorSharp from "../assets/img/color-sharp.png";
+
 const Skills = () => {
+  const PreventDefault = (e) => {
+    e.preventDefault();
+  };
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -31,7 +42,7 @@ const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className="skill-bx">
+            <div className="skill-box">
               <h2>Skills</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -44,27 +55,28 @@ const Skills = () => {
                 infinite={true}
                 className="skill-slider"
               >
-                <div className="item">
-                    <img src={''} alt="" />
-                    <h3>React</h3>
+                <div onDragStart={PreventDefault} className="item">
+                  <img src={React} alt="React Lib" />
+                  <h3>React</h3>
                 </div>
-                <div className="item">
-                    <img src={''} alt="" />
-                    <h3>JavaScript</h3>
+                <div onDragStart={PreventDefault} className="item">
+                  <img src={JavaScript} alt="JavaScript" />
+                  <h3>JavaScript</h3>
                 </div>
-                <div className="item">
-                    <img src={''} alt="" />
-                    <h3>HTML</h3>
+                <div onDragStart={PreventDefault} className="item">
+                  <img src={HTML} alt="HTML" />
+                  <h3>HTML</h3>
                 </div>
-                <div className="item">
-                    <img src={''} alt="" />
-                    <h3>CSS</h3>
+                <div onDragStart={PreventDefault} className="item">
+                  <img src={CSS} alt="CSS" />
+                  <h3>CSS</h3>
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
+      <img className="background-image-left" src={ColorSharp} alt="Image" />
     </section>
   );
 };
