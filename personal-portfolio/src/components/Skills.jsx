@@ -10,7 +10,7 @@ import React from "../assets/img/react.webp";
 import JavaScript from "../assets/img/js.png";
 import HTML from "../assets/img/html.png";
 import CSS from "../assets/img/css.png";
-import ColorSharp from "../assets/img/color-sharp.png";
+import ColorSharp from "../assets/img/color-sharp.jpg";
 
 const Skills = () => {
   const PreventDefault = (e) => {
@@ -19,7 +19,6 @@ const Skills = () => {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -76,7 +75,6 @@ const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={ColorSharp} alt="Image" />
     </section>
   );
 };

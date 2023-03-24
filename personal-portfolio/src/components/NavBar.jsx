@@ -49,7 +49,7 @@ const Navb = () => {
               <Nav.Link
                 as={HashLink}
                 smooth
-                to="home"
+                to="#home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
@@ -60,7 +60,7 @@ const Navb = () => {
               <Nav.Link
                 as={HashLink}
                 smooth
-                to="skills"
+                to="#skills"
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
                 }
@@ -71,7 +71,7 @@ const Navb = () => {
               <Nav.Link
                 as={HashLink}
                 smooth
-                to="projects"
+                to="#projects"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"
