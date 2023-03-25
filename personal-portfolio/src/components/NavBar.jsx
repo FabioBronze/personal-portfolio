@@ -91,9 +91,11 @@ const Navb = () => {
                   <img src={navIcon2} alt="Github" />
                 </a>
               </div>
-              <button>
-                <span>Download CV</span>
-              </button>
+              <HashLink to="connect">
+                <button className="vvd">
+                  <span>Download CV</span>
+                </button>
+              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
