@@ -24,21 +24,21 @@ const Projects = () => {
     },
     {
       id: 3,
-      image: img5,
-      title: "Social Media",
+      image: img3,
+      title: "Clone Apple",
       github: "https://github.com/FabioBronze/clone-apple",
       demo: "https://clone-apple-black.vercel.app/",
     },
     {
       id: 4,
-      image: img3,
+      image: img4,
       title: "Movies Library",
       github: "https://github.com/FabioBronze/movies-lib",
       demo: "https://taupe-chaja-0fde7e.netlify.app/",
     },
     {
       id: 5,
-      image: img4,
+      image: img5,
       title: "Async Await Form",
       github: "https://github.com/FabioBronze/async-await-form",
       demo: "https://async-await-form.vercel.app/",
@@ -56,23 +56,24 @@ const Projects = () => {
     <section id="portfolio">
       <h3>Projects</h3>
       <div className="container portfolio-container">
-        <article className="portfolio-item">
-          <div className="portfolio-item-image">
-            <img src={img} alt="" />
-          </div>
-          <h4>Title</h4>
-          <div className="portfolio-item-cta">
-            <a href="https://github.com/FabioBronze" className="btn">
-              Github
-            </a>
-            <a
-              href="https://github.com/FabioBronze"
-              className="btn btn-primary"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
+        {data.map(({ id, image, title, github, demo }) => {
+          return (
+            <article key={id} className="portfolio-item">
+              <div className="portfolio-item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h4>{title}</h4>
+              <div className="portfolio-item-cta">
+                <a href={github} className="btn">
+                  Github
+                </a>
+                <a href={demo} className="btn btn-primary">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
