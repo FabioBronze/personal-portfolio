@@ -399,8 +399,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 40px 0;
 }
 
-#portfolio h3,
-h4 {
+#portfolio h3 {
   text-align: center;
   font-size: 45px;
   font-weight: 700;
@@ -457,7 +456,36 @@ h4 {
   margin: 1.2rem 0 1.2rem;
 }
 
+.portfolio-item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* Media Queries */
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .header-img {
+    width: 400px;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-img {
+    width: 350px;
+  }
+
+  .navbar-text button {
+    display: none;
+  }
+}
+
+/* Phones */
 @media screen and (max-width: 768px) {
   .header-img {
     display: none;
@@ -465,5 +493,10 @@ h4 {
 
   .banner {
     padding: 150px 10px;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
