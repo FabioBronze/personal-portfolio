@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Contact = () => {
-  const formInitialDetails = {
+  const user = {
     firstName: "",
     lastName: "",
     email: "",
@@ -13,7 +13,7 @@ const Contact = () => {
     message: "",
   };
 
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [formDetails, setFormDetails] = useState(user);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
 
