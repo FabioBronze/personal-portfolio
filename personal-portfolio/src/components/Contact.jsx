@@ -1,5 +1,5 @@
 // Hooks
-import React, { useRef } from "react";
+import { useState, useRef } from "react";
 
 // Bootstrap
 import { EnvelopeAt, Telephone } from "react-bootstrap-icons";
@@ -8,10 +8,13 @@ import { EnvelopeAt, Telephone } from "react-bootstrap-icons";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [buttonText, setButtonText] = useState("Send Message");
+  const [message, setMessage] = useState(null);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setButtonText("Sending...");
 
     emailjs
       .sendForm(
@@ -23,12 +26,15 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setButtonText("Send Message");
+          setMessage("Email Sent Successfully!");
         },
         (error) => {
           console.log(error.text);
+          setButtonText("Send Message");
+          setMessage("Failed to send email. Please, try again later.");
         }
       );
-
     e.target.reset();
   };
 
@@ -56,15 +62,12 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="E-Mail" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Message"
-            required
-          ></textarea>
+          <textarea name="message" rows="7" placeholder="Message" required />
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {buttonText}
           </button>
+          {!message && <p className="danger">{message}</p>}
+          {message && <p className="success">{message}</p>}
         </form>
       </div>
     </section>
