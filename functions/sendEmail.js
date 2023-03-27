@@ -4,8 +4,8 @@ exports.handler = async (event) => {
   const contactEmail = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "dosreistha@gmail.com",
-      pass: "cbvrljhidvjdrtpp",
+      user: "fabiobronze.work@gmail.com",
+      pass: "906071116",
     },
   });
 
@@ -17,15 +17,14 @@ exports.handler = async (event) => {
     }
   });
 
-  const { fullName, email, message, phone } = JSON.parse(event.body);
+  const { fullName, email, message } = JSON.parse(event.body);
 
   const mail = {
     from: fullName,
-    to: "dosreistha@gmail.com",
+    to: "fabiobronze.work@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${fullName}</p>
            <p>Email: ${email}</p>
-           <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
   };
 
