@@ -28,11 +28,13 @@ const Contact = () => {
           console.log(result.text);
           setButtonText("Send Message");
           setMessage("Email Sent Successfully!");
+          setTimeout(() => setMessage(null), 2000);
         },
         (error) => {
           console.log(error.text);
           setButtonText("Send Message");
           setMessage("Failed to send email. Please, try again later.");
+          setTimeout(() => setMessage(null), 2000);
         }
       );
     e.target.reset();
