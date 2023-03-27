@@ -21,10 +21,12 @@ const Banner = () => {
               Front-End Developer <Arrow90degDown size={30} />
             </h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sed
-              voluptatum rerum porro dolorem eum aspernatur maxime officia,
-              tempore consectetur repellendus consequatur harum, voluptates
-              perferendis dicta veritatis adipisci ullam delectus.
+              Hello everyone! I'm Fábio and i'm a junior front-end programmer
+              looking for new job opportunities! i have just graduated in
+              programming, and started studying in 2020. I've already had 4
+              months of internship experience and i'm looking for my first job
+              as a junior developer. Below you can see my resume with more
+              detailed information about me.
             </p>
             <button onClick={() => console.log("connect")}>
               Download CV <ArrowRightCircle size={25} />

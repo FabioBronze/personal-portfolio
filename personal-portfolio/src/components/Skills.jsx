@@ -45,10 +45,10 @@ const Skills = () => {
             <div className="skill-box">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                eum sequi, culpa veritatis nisi dolorem porro ipsa magnam. Modi
-                soluta nostrum non voluptatum aliquid enim quisquam nisi
-                molestiae, at quidem.
+                Here, you can see the technologies I use and work with. Besides
+                being a front-end programmer, I also have some knowledge in
+                back-end (NodeJS) and some frameworks (Bootstrap). I study and
+                learn every day to become more and more a qualified programmer.
               </p>
               <Carousel
                 responsive={responsive}
