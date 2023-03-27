@@ -539,6 +539,20 @@ textarea {
   color: #b8b8b8;
 }
 
+/* Footer */
+.footer {
+  background: black;
+  padding: 0 0 40px 0;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
 /* Media Queries */
 /* Tablets */
 @media screen and (max-width: 1024px) {
@@ -574,5 +588,16 @@ textarea {
 
   .container.contact-container {
     width: 90%;
+  }
+
+  .footer .social-icon {
+    padding-top: 10px;
+    display: flex;
+    justify-content: right;
+  }
+
+  .footer p {
+    display: flex;
+    justify-content: right;
   }
 }
