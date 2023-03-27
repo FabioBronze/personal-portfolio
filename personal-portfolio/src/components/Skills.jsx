@@ -5,6 +5,8 @@ import React from "../assets/img/react.webp";
 import JavaScript from "../assets/img/js.png";
 import HTML from "../assets/img/html.png";
 import CSS from "../assets/img/css.png";
+import Node from "../assets/img/node.webp";
+import Bootstrap from "../assets/img/bootstrap.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -64,12 +66,20 @@ const Skills = () => {
                   <h3>JavaScript</h3>
                 </div>
                 <div onDragStart={PreventDefault} className="item">
+                  <img src={Node} alt="NodeJS" />
+                  <h3>NodeJS</h3>
+                </div>
+                <div onDragStart={PreventDefault} className="item">
                   <img src={HTML} alt="HTML" />
                   <h3>HTML</h3>
                 </div>
                 <div onDragStart={PreventDefault} className="item">
                   <img src={CSS} alt="CSS" />
                   <h3>CSS</h3>
+                </div>
+                <div onDragStart={PreventDefault} className="item">
+                  <img src={Bootstrap} alt="Bootstrap" />
+                  <h3>Bootstrap</h3>
                 </div>
               </Carousel>
             </div>
