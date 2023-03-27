@@ -81,7 +81,7 @@ import { EnvelopeAt, Telephone } from "react-bootstrap-icons";
 
 const Contact = () => {
   const formInitialDetails = {
-    firstName: "",
+    fullName: "",
     email: "",
     message: "",
   };
@@ -143,9 +143,9 @@ const Contact = () => {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            value={formDetails.firstName}
+            value={formDetails.fullName}
             placeholder="Name"
-            onChange={(e) => onFormUpdate("firstName", e.target.value)}
+            onChange={(e) => onFormUpdate("fullName", e.target.value)}
             required
           />
           <input
