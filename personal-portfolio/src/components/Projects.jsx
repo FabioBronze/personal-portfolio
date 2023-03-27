@@ -4,6 +4,9 @@ import img3 from "../assets/img/clone-apple.png";
 import img4 from "../assets/img/movies-lib.png";
 import img5 from "../assets/img/async-await-form.png";
 import img6 from "../assets/img/calculator.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
   const data = [
@@ -51,10 +54,14 @@ const Projects = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section id="projects">
       <h3>Projects</h3>
-      <div className="container portfolio-container">
+      <div data-aos="fade-up" className="container portfolio-container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="portfolio-item">

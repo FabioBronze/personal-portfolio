@@ -1,6 +1,9 @@
 import { useState, useRef } from "react";
 import { EnvelopeAt, Telephone } from "react-bootstrap-icons";
 import emailjs from "emailjs-com";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [buttonText, setButtonText] = useState("Send Message");
@@ -35,11 +38,15 @@ const Contact = () => {
     e.target.reset();
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section id="contact">
       <h2>Get in Touch</h2>
       <h3>Contact Me</h3>
-      <div className="container contact-container">
+      <div data-aos="fade-up" className="container contact-container">
         <div className="contact-options">
           <article className="contact-option">
             <EnvelopeAt size={20} className="email-icon" />

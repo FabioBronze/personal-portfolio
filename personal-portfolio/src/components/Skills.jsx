@@ -5,8 +5,15 @@ import React from "../assets/img/react.webp";
 import JavaScript from "../assets/img/js.png";
 import HTML from "../assets/img/html.png";
 import CSS from "../assets/img/css.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const PreventDefault = (e) => {
     e.preventDefault();
   };
@@ -33,7 +40,7 @@ const Skills = () => {
   return (
     <section className="skill" id="skills">
       <Container>
-        <Row>
+        <Row data-aos="fade-up">
           <Col>
             <div className="skill-box">
               <h2>Skills</h2>
