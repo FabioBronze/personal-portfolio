@@ -1,4 +1,3 @@
-// Images
 import img1 from "../assets/img/social-media.png";
 import img2 from "../assets/img/disney-plus.png";
 import img3 from "../assets/img/clone-apple.png";
@@ -53,7 +52,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="portfolio">
+    <section id="projects">
       <h3>Projects</h3>
       <div className="container portfolio-container">
         {data.map(({ id, image, title, github, demo }) => {

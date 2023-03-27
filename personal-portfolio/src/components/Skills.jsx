@@ -1,11 +1,6 @@
-// Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
-
-// Carousel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-// Images
 import React from "../assets/img/react.webp";
 import JavaScript from "../assets/img/js.png";
 import HTML from "../assets/img/html.png";

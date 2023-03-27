@@ -277,7 +277,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner */
 .banner {
   margin-top: 0;
-  padding: 200px 0 100px 0;
+  padding: 150px 0 200px 0;
   background-image: url("./assets/img/banner-bg.jpg");
   background-position: bottom center;
   background-size: cover;
@@ -355,7 +355,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Skills */
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 80px 0;
   position: relative;
 }
 
@@ -391,15 +391,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider .item img {
   width: 40%;
   margin: 0 auto 15px auto;
+  cursor: pointer;
 }
 
 /* Projects */
-#portfolio {
+#projects {
   background: linear-gradient(to bottom, #000000, #002d38);
   padding: 40px 0;
 }
 
-#portfolio h3 {
+#projects h3 {
   text-align: center;
   font-size: 45px;
   font-weight: 700;
@@ -415,7 +416,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .container .btn {
   width: max-content;
   display: inline-block;
-  color: #4db5ff;
+  color: #b8b8b8;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -423,14 +424,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .container .btn:hover {
-  background: white;
-  color: #1f1f38;
+  background: #3b3b79;
+  color: white;
 }
 
 .container .btn-primary {
   border: none;
-  background: #00a1c9;
-  color: #1f1f38;
+  background: #0e4c5a;
+  color: white;
 }
 
 .portfolio-item {
@@ -439,13 +440,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: all 400ms ease;
-  border-bottom: 1px solid #525299;
-  border-top: 1px solid #525299;
+  border-bottom: 1px solid #32325f;
+  border-top: 1px solid #32325f;
   margin: 0.5rem;
 }
 
 .portfolio-item:hover {
-  border: 1px solid #1f1f38;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  border-top: 1px solid rgb(170, 170, 170);
 }
 
 .portfolio-item-image {
@@ -501,13 +503,14 @@ h3 {
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
-  border-bottom: 1px solid #525299;
-  border-top: 1px solid #525299;
+  border-bottom: 1px solid #32325f;
+  border-top: 1px solid #32325f;
   transition: all 400ms ease;
 }
 
 .contact-option:hover {
-  border: 1px solid #1f1f38;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  border-top: 1px solid rgb(170, 170, 170);
 }
 
 .email-icon,
@@ -518,7 +521,7 @@ h3 {
 .contact-option a {
   display: inline-block;
   text-decoration: none;
-  color: #43a1e4;
+  color: #0085a7;
   font-weight: 0;
 }
 
@@ -534,7 +537,7 @@ textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 1px solid #525299;
+  border: 1px solid #32325f;
   resize: none;
   color: #b8b8b8;
 }
@@ -557,7 +560,7 @@ textarea {
 /* Tablets */
 @media screen and (max-width: 1024px) {
   .header-img {
-    width: 400px;
+    width: 360px;
   }
 
   .portfolio-container {
@@ -571,10 +574,28 @@ textarea {
   }
 }
 
+/* Responsive Navbar*/
+@media screen and (max-width: 992px) {
+  .vvd {
+    display: none;
+  }
+}
+
 /* Phones */
 @media screen and (max-width: 768px) {
+  nav.navbar.scrolled {
+    padding: 10px 0;
+  }
+
+  .cont-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .header-img {
-    display: none;
+    margin-top: 30px;
+    width: 80%;
   }
 
   .banner {

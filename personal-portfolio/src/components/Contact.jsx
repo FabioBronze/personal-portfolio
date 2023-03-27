@@ -1,10 +1,5 @@
-// Hooks
 import { useState, useRef } from "react";
-
-// Bootstrap
 import { EnvelopeAt, Telephone } from "react-bootstrap-icons";
-
-// Emailjs
 import emailjs from "emailjs-com";
 
 const Contact = () => {

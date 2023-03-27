@@ -1,14 +1,7 @@
-// Hooks
 import { useState, useEffect } from "react";
-
-// Bootstrap
 import { Navbar, Nav, Container } from "react-bootstrap";
-
-// Images
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-
-// React-Router-DOM
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 

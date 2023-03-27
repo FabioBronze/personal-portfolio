@@ -1,7 +1,4 @@
-// Bootstrap
 import { Col, Container, Row } from "react-bootstrap";
-
-// Images
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 
