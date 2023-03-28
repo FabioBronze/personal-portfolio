@@ -583,6 +583,7 @@ textarea {
 /* Phones */
 @media screen and (max-width: 768px) {
   nav.navbar {
+    padding: 5px 0;
     background: #121212;
   }
 
