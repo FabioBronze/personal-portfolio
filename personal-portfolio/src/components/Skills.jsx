@@ -47,10 +47,11 @@ const Skills = () => {
             <div className="skill-box">
               <h2>Skills</h2>
               <p>
-                Here, you can see the technologies I use and work with. Besides
-                being a front-end programmer, I also have some knowledge in
-                back-end (NodeJS) and some frameworks (Bootstrap). I study and
-                learn every day to become more and more a qualified programmer.
+                Here, you can see the technologies that I master. I am
+                experienced in building scalable web applications and designing
+                responsive and professional websites. I am always learning new
+                technologies to ensure I can provide the best solutions for your
+                projects.
               </p>
               <Carousel
                 responsive={responsive}
