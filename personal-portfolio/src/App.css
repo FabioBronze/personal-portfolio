@@ -107,7 +107,6 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  background: #121212;
 }
 
 .logo {
@@ -583,6 +582,10 @@ textarea {
 
 /* Phones */
 @media screen and (max-width: 768px) {
+  nav.navbar {
+    background: #121212;
+  }
+
   .navbar-text button {
     display: block;
   }
