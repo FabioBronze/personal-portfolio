@@ -84,11 +84,11 @@ const Navb = () => {
                   <img src={navIcon2} alt="Github" />
                 </a>
               </div>
-              <HashLink to="connect">
-                <button className="vvd">
+              <button>
+                <a href="cv-test.pdf" download>
                   <span>Download CV</span>
-                </button>
-              </HashLink>
+                </a>
+              </button>
             </span>
           </Navbar.Collapse>
         </Container>

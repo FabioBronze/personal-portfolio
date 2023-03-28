@@ -31,8 +31,10 @@ const Banner = () => {
               myself and my professional experience.{" "}
               <Arrow90degDown size={15} />
             </p>
-            <button onClick={() => console.log("connect")}>
-              Download CV <ArrowRightCircle size={25} />
+            <button>
+              <a href="cv-test.pdf" download>
+                Download CV <ArrowRightCircle size={25} />
+              </a>
             </button>
           </Col>
           <Col className="cont-img" xs={12} md={6} xl={5}>
