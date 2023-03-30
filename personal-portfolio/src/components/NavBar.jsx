@@ -12,6 +12,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 
+// Resume
+import resume from "../assets/resume-fabiobronze.pdf";
+
 const Navb = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -92,7 +95,7 @@ const Navb = () => {
                 </a>
               </div>
               <button>
-                <a href="../assets/resume.pdf" download="resume.pdf">
+                <a href={resume} download="resume.pdf">
                   <span>Download CV</span>
                 </a>
               </button>

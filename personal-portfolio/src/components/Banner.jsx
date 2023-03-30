@@ -12,6 +12,9 @@ import Header from "../assets/img/header.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// Resume
+import resume from "../assets/resume-fabiobronze.pdf";
+
 const Banner = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -39,7 +42,7 @@ const Banner = () => {
               <Arrow90degDown size={15} />
             </p>
             <button>
-              <a href="../assets/resume.pdf" download="resume.pdf">
+              <a href={resume} download="resume.pdf">
                 Download CV <ArrowRightCircle size={25} />
               </a>
             </button>

@@ -337,7 +337,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .header-img {
   width: 450px;
   border-radius: 50%;
-  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #002d30;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #003033;
 }
 
 @keyframes updown {
