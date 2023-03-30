@@ -92,7 +92,7 @@ const Navb = () => {
                 </a>
               </div>
               <button>
-                <a href="cv-fabiobronze-pt" download>
+                <a href="./assets/cv/cv-fabiobronze-pt.pdf" download>
                   <span>Download CV</span>
                 </a>
               </button>

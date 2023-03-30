@@ -13,6 +13,7 @@ import HTML from "../assets/img/html.png";
 import CSS from "../assets/img/css.png";
 import Node from "../assets/img/node.webp";
 import Bootstrap from "../assets/img/bootstrap.png";
+import Git from "../assets/img/git.png";
 
 // Animations
 import AOS from "aos";
@@ -76,6 +77,10 @@ const Skills = () => {
                 <div onDragStart={PreventDefault} className="item">
                   <img src={Node} alt="NodeJS" />
                   <h3>NodeJS</h3>
+                </div>
+                <div onDragStart={PreventDefault} className="item">
+                  <img src={Git} alt="Git" />
+                  <h3>Git</h3>
                 </div>
                 <div onDragStart={PreventDefault} className="item">
                   <img src={HTML} alt="HTML" />
