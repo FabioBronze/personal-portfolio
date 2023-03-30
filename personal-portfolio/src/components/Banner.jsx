@@ -39,7 +39,7 @@ const Banner = () => {
               <Arrow90degDown size={15} />
             </p>
             <button>
-              <a href="cv-test.pdf" download>
+              <a href="../assets/resume.pdf" download="resume.pdf">
                 Download CV <ArrowRightCircle size={25} />
               </a>
             </button>
