@@ -1,9 +1,16 @@
+// Hooks
 import { useState, useEffect } from "react";
+
+// Bootstrap
 import { Navbar, Nav, Container } from "react-bootstrap";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
+
+// React-Router
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+
+// Images
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
 
 const Navb = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -85,7 +92,7 @@ const Navb = () => {
                 </a>
               </div>
               <button>
-                <a href="cv-test.pdf" download>
+                <a href="cv-fabiobronze-pt" download>
                   <span>Download CV</span>
                 </a>
               </button>

@@ -1,9 +1,15 @@
-import { useState, useRef } from "react";
+// Hooks
+import { useState, useRef, useEffect } from "react";
+
+// Bootstrap
 import { EnvelopeAt, Telephone } from "react-bootstrap-icons";
+
+// EmailJS
 import emailjs from "emailjs-com";
+
+// Animations
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Contact = () => {
   const [buttonText, setButtonText] = useState("Send Message");

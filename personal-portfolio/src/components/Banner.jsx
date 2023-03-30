@@ -1,9 +1,16 @@
+// Hooks
+import { useEffect } from "react";
+
+// Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle, Arrow90degDown } from "react-bootstrap-icons";
+
+// Pages
 import Header from "../assets/img/header.png";
+
+// Animations
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Banner = () => {
   useEffect(() => {

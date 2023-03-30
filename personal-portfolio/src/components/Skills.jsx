@@ -1,15 +1,22 @@
+//Hooks
+import { useEffect } from "react";
+
+// Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+// Images
 import React from "../assets/img/react.webp";
 import JavaScript from "../assets/img/js.png";
 import HTML from "../assets/img/html.png";
 import CSS from "../assets/img/css.png";
 import Node from "../assets/img/node.webp";
 import Bootstrap from "../assets/img/bootstrap.png";
+
+// Animations
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Skills = () => {
   useEffect(() => {
