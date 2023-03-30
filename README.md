@@ -1,13 +1,10 @@
 # Portfolio
-<p/>Recriação da página Disney Plus, com HTML/CSS e JavaScript, simulando um Fetch API Externo e vai buscar os nomes/imagens do perfil/filmes no arquivo JSON.<p/>
-<p/>Layout totalmente responsivo e dinâmico através de JavaScript e JSON.<p/>
+<p/>Este é o meu portofolio pessoal, com todas as minhas informações como dev. Projeto feito em React e com formulário de contacto.<p/>
+<p/>Layout totalmente responsivo e dinâmico.<p/>
 
 <h1/>Linguagens Utilizadas</h1>
-<li/>Javascript</li>
-<li/>HTML/CSS</li>
-
-<h1/>Algumas Notas</h1>
-Neste projeto, foi simulado um sistema API com JSON, onde se encontram os filmes que foram implementados no projeto.
+<li/>React</li>
+<li/>HTML/CSS/Bootstrap</li>
 
 <h1/>Autor</h1>
 Fábio Bronze
