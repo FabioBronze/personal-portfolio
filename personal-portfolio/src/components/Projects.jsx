@@ -31,17 +31,17 @@ const Projects = () => {
     },
     {
       id: 3,
-      image: img4,
-      title: "Movies Library API",
-      github: "https://github.com/FabioBronze/movies-lib",
-      demo: "https://taupe-chaja-0fde7e.netlify.app/",
-    },
-    {
-      id: 4,
       image: img5,
       title: "Netflix API Project",
       github: "https://github.com/FabioBronze/netflix-API-project",
       demo: "https://netflix-api-project.vercel.app/",
+    },
+    {
+      id: 4,
+      image: img4,
+      title: "Movies Library API",
+      github: "https://github.com/FabioBronze/movies-lib",
+      demo: "https://taupe-chaja-0fde7e.netlify.app/",
     },
     {
       id: 5,
