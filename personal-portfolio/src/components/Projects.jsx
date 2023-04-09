@@ -6,7 +6,7 @@ import img1 from "../assets/img/social-media.png";
 import img2 from "../assets/img/disney-plus.png";
 import img3 from "../assets/img/clone-apple.png";
 import img4 from "../assets/img/movies-lib.png";
-import img5 from "../assets/img/async-await-form.png";
+import img5 from "../assets/img/netflix.png";
 import img6 from "../assets/img/calculator.png";
 
 // Animations
@@ -31,24 +31,24 @@ const Projects = () => {
     },
     {
       id: 3,
-      image: img3,
-      title: "Clone Apple",
-      github: "https://github.com/FabioBronze/clone-apple",
-      demo: "https://clone-apple-black.vercel.app/",
-    },
-    {
-      id: 4,
       image: img4,
-      title: "Movies Library",
+      title: "Movies Library API",
       github: "https://github.com/FabioBronze/movies-lib",
       demo: "https://taupe-chaja-0fde7e.netlify.app/",
     },
     {
-      id: 5,
+      id: 4,
       image: img5,
-      title: "Async Await Form",
-      github: "https://github.com/FabioBronze/async-await-form",
-      demo: "https://async-await-form.vercel.app/",
+      title: "Netflix API Project",
+      github: "https://github.com/FabioBronze/netflix-API-project",
+      demo: "https://netflix-api-project.vercel.app/",
+    },
+    {
+      id: 5,
+      image: img3,
+      title: "Apple",
+      github: "https://github.com/FabioBronze/clone-apple",
+      demo: "https://clone-apple-black.vercel.app/",
     },
     {
       id: 6,
