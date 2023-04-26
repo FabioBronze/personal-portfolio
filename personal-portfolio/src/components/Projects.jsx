@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 // Images
-import img1 from "../assets/img/social-media.png";
+import img1 from "../assets/img/web-post.png";
 import img2 from "../assets/img/disney-plus.png";
 import img3 from "../assets/img/clone-apple.png";
 import img4 from "../assets/img/movies-lib.png";
@@ -18,7 +18,7 @@ const Projects = () => {
     {
       id: 1,
       image: img1,
-      title: "Social Media",
+      title: "WebPost",
       github: "https://github.com/FabioBronze/social-media",
       demo: "https://gilded-boba-0c8c64.netlify.app/",
     },
